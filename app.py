@@ -30,9 +30,9 @@ if not os.path.exists(model_path):
 # ---------------------------
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model(model_path, compile=False)
+    return tf.keras.models.load_model("cnn_hb_model.h5")
 
-model = tf.keras.models.load_model("cnn_hb_model.h5")
+model = load_model()
 
 # ---------------------------
 # Camera Input
