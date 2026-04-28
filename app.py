@@ -32,7 +32,7 @@ if not os.path.exists(model_path):
 def load_model():
     return tf.keras.models.load_model(model_path, compile=False)
 
-model = load_model()
+model = tf.keras.models.load_model("cnn_hb_model.h5")
 
 # ---------------------------
 # Camera Input
